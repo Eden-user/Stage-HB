@@ -7,6 +7,7 @@ from modelcluster.contrib.taggit import ClusterTaggableManager
 from taggit.models import TaggedItemBase
 from wagtail.admin.panels import FieldPanel, MultiFieldPanel
 from wagtail.snippets.models import register_snippet
+from wagtail.search import index
 
 class BlogTagIndexPage(Page):
     def get_context(self, request):
@@ -59,6 +60,11 @@ class BlogPage(Page):
         "date", "intro", "body",
         "gallery_images",
         ]
+    
+    search_fields = Page.search_fields + [
+        index.SearchField('intro'),
+        index.SearchField('body'),
+    ]
     
 class BlogPageGalleryImage(Orderable):
     page = ParentalKey(BlogPage, on_delete=models.CASCADE, related_name='gallery_images')

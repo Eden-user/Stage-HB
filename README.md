@@ -9,4 +9,5 @@
  - Tutoriel Wagtail avancé (en cours)
 ## Jour 3
  - Suivi des tests et et de correction de bugs sur le project du syndicat du consulat avec Agnès
- - Poursuite du tutoriel Wagtail avancé
+ - Poursuite du tutoriel Wagtail ~~avancé~~ terminé.
+ - lecture rapide de quelques articles dit "avancés", mais il faudrait les pratiquer sur le terrain
