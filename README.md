@@ -39,4 +39,5 @@
 
 ## Jour 8
 ### Jeudi 9 avril
-
+ - Je repars sur mon lien tva_export qui me répêtait " Reverse for '...' not found. '...' is not a valid view function or pattern name." Je n'ai pas su trouver un moyen de retourner sur la page CustomerRequest autre que simplement lui faire faire un redirect(has_tva_export_permission(request)) aka la fonction associée à cette action qui effectue l'action en question (je me comprends). Bref, ça fonctionne. * danse de la joie *
+ - je me souviens ensuite que mon formulaire payment est cassé, en plus de l'absence inacceptable d'un calendrier décent - Arthur m'a aidé à trouver un calendrier mais pour X raison il est vraiment vilain. Affaire à suivre. Revenons au formulaire : ce sont des champs texte qui attendent une date pour d'un, une heure pour l'autre. Si je rentre 12/02/2026 06:22 il me dit 'list' object has no attribute 'stip', et je lui dis oui.
