@@ -22,7 +22,7 @@
 ### Vendredi 3 avril
  - explications sur la gestion des migrations
  - faire en sorte que le prix affiché sur les factures, les mails et le détail sur le site ne se mette pas à jour en fonction des changements (currency) mais reste identique au jour de création de la facture.
- - afin d'être plus friendly avec les nouveaux devs, j'ai ajouté une page d'accueil avec des lien pour la version dev du projet le Bureau. En utilisant Treebeard. cf. Notion : [code that creates content](vintage-pot-142.notion.site/Code-that-creates-content-33775e96074380499d77c55f08f14b35?pvs=74).
+ - afin d'être plus friendly avec les nouveaux devs, j'ai ajouté une page d'accueil avec des lien pour la version dev du projet le Bureau. En utilisant Treebeard. cf. Notion : [code that creates content](https://vintage-pot-142.notion.site/Code-that-creates-content-33775e96074380499d77c55f08f14b35?pvs=74).
 - corrigé les problèmes avec les merge requests remove civilités (problème de migrations), rendre l'environnement de dev plus sympathique (problème de date réglé par Arthur), et la pipeline de prixcustomerrequest est restée sur un échec ce jour là.
 ## Jour 6 
 ### Mardi 7 avril
