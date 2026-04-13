@@ -46,3 +46,16 @@
  > Si Internet ne peut te sauver\
  > Lis le code source bae.
 - Conclusion pb 1 : ce n'est pas un lien mais une view, et il se trouve qu'unfold renomme les view : app_modele_action.
+
+## Jour 9
+### Vendredi 9 avril
+- Il se trouve que les permissions ne sont pas indispensables dans une action unfold.
+- J'ai appris qu'il faut ajouter les installations dans le fichier .toml et regénérer les requirements.txt & requirements-dev.txt, tout ça en veillant à ce que les versions ne conflictent pas. Et attention : c'est bien la syntaxe utilisée dans le pip install qu'il faut mettre dans le .toml !!
+- J'ai pu corriger les champs date et heure du formulaire de paiement : il fallait déclarer un champ SplitDateTime (dans la classe dans le fichier admin.py, pas dans le modèle). Et pour corriger l'apparence de l'horloge j'ai du utiliser le widget UnfoldAdminSplitDateTimeVerticalWidget, qui attend des attributs date et time, et leur présence corrige l'UI/UX du calendrier et font disparaitre l'affreuse double horloge. Je n'ai en renvache pas trouvé un moyen de corriger l'horloge : c'est l'horloge django qui se superpose à l'horloge unfold (qui est elle-même excentée). Bref je garde ça pour plus tard, le formulaire fonctionne très bien sans.
+- MacOs m'a encore trahi en cachant des fichiers .DS_Store, grrrrrr
+- Enfin j'ai appris que ruff (le syntax checker qui fait pré-commit dans nos projets) transforme les string suivis d'une virgule en tuples :0 
+- Pour finir la journée, en attendant la merge, j'ai commencé à regarder le reste des actions à faire dans unfold, qui relèvent plutôt du refactoring que de la création (comme précédemment) mais ça me va très bien : ça me permet d'intégrer d'une part le fonctionnement des actions unfold, et d'autre part les foncitonnalités de l'admin LeBureau, et par extension le fonctionnement interne du Bureau !
+
+## Jour 10
+### Lundi 13 avril
+
