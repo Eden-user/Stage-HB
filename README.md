@@ -58,4 +58,15 @@
 
 ## Jour 10
 ### Lundi 13 avril
+ - J'ai continué l'ajout des actions unfold dans le mgmt et les presales, les actions mgmt ayant fonctionné assez rapidement, mais je n'avais pas compris que ça fonctionnait comme il faut donc je tournais en rond cherchant un problème qui n'existait pas. Fun 
+ - J'ai enchaîné sur les actions dans les présales notamment la fonction create poweradmin, j'ai beaucoup lu le code pour comprendre comment fonctionnent les méthodes préexistantes, et j'ai fini par comprendre (tard le soir) qu'il fallait que je récupère la customerRequest depuis l'action admin avant d'appeler la fonction en question.
+
+## Jour 11
+### Mardi 14 avril
+ - Maintenant que mes fonctions customerRequest fonctionnent (il a aussi fallu que je crée les données nécessaires, en lisant le code pour bien mettre les bonnes données) j'ai fait en sorte d'avoir des messages de confirmation (echec ou success) sur une page template minimaliste, qu'il faudrait probablement garnir un peu mais plus tard.
+ - j'ai découvert ce qu'étaient les problèmes de brokenpipe, où le client du server (le navigateur) décide de couper la liaison pendant un transefrt de données. Dans notre cas c'était à cause des requêtes DNS qu'on a donc désactivé temporairement le temps que je teste les outils qui n'en ont pas besoin.
+ - J'ai aussi eu une erreur étrange pendant les jobs (tests) en pipeline : le git diff qui était effectué à la fin ne passait pas car il ne constatait pas assez de différences entre la branche mergée et main. J'avais crée la branche à partir d'une autre branche qui n'avait pas encore été mergée, une fois le merge de la première effectué la pipeline de la suivante passait sans problème.
+
+## Jour 12 
+### Mercredi 15 avril
 
