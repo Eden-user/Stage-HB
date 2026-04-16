@@ -69,4 +69,10 @@
 
 ## Jour 12 
 ### Mercredi 15 avril
+ - aujourd'hui j'ai essentiellement lu la documentation unfold sur le dashboard, et le code de formula, le project exemple proposé par unfold.
 
+## Jour 13
+### Jeudi 16 avril
+ - j'ai repris ma lecture de la doc unfold et j'ai fini par comprendre que le dashboard est fait de composants unfold (on peut aussi en faire des customs).
+ - j'ai donc commencé à créer des templates avec ces composants et fait passer des données dedans en créant une fonction dashboard callback dans un views.py et en passant mes données dans le fichier admin.p.
+ - j'ai donc commencé à créer des templates avec ces composants et fait passer des données dedans en créant une fonction dashboard callback dans un views.py et en passant mes données dans le fichier admin.py.
